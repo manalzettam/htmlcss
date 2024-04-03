@@ -1,0 +1,14 @@
+#Faire un commit local# 
+
+	git status
+	git commit -m "Premiere page html modifiée"
+	git add .
+	git status
+
+#Publier une modification# 
+
+ 	git pull https://github.com/manalzettam/htmlcss
+ 	git status
+ 	git add .
+ 	git commit -m "Premiere page html modifiée"
+ 	git push origin main
