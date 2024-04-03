@@ -2,4 +2,5 @@ git status
 git commit -m "Premiere page html modifiée"
 git add .
 git pull https://github.com/manalzettam/htmlcss
+git commit -m "Premiere page html modifiée"
 git push origin main
