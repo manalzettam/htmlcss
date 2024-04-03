@@ -1,0 +1,241 @@
+@font-face {
+    font-family: ballpark;
+    src: url('../materiales/polices/ballpark.eot');
+    src: url('../materiales/polices/ballpark.svg') format('svg');
+    src: url('../materiales/polices/ballpark.woff') format('woff'),
+        url('../materiales/polices/ballpark.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: dayrom;
+    src: url('../materiales/polices/dayrom.eot'),
+        url('../materiales/polices/dayrom.svg') format('svg'),
+        url('../materiales/polices/dayrom.woff') format('woff'),
+        url('../materiales/polices/dayrom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #181818;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-image: url(../materiales/images/fond_rose.png);
+}
+
+#main_wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h3, nav a{
+    font-family: dayrom;
+    font-weight: normal;
+    font-size: normal;
+    text-transform: uppercase;
+}
+
+header {
+    background: url(../materiales/images/separateur.png) repeat-x bottom;  
+}
+
+#logo {
+    display: inline-block;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#logo figure {
+    display: inline-block;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'ballpark', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo_zozor, header h1 {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+header h2 {
+    font-family: dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+
+
+nav {
+    display: block;   
+    text-align: right; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+#banner-image {
+    margin-top: 20px;
+    height: 200px;
+    background-image: url('../materiales/images/sanfrancisco.jpg');
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;  /**   Sirve para realizar una sombra negra    **/
+    position: relative;
+    margin-top: 40px;
+}
+
+#banner-description {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(24, 24, 24, .8);
+    width: 99.5%;
+    height: 33px;
+    padding-left: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.red_buttom {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #760001;
+    color: #fff;
+    text-align: center;
+}
+
+/**     Cuerpo de la pagina o SECTION      **/
+
+section {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article {
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+.icon-categories {
+    margin-right: 10px;
+}
+
+article p {
+    font-size: .8em;
+}
+
+aside {
+    max-width: 35%;
+    background-color: #706b64;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: .9em;
+    color: #fff;
+    box-shadow: 0px 2px 5px #1c1a19;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#arrow {
+    position: absolute;
+    left: -12px;
+    top: 120px;
+}
+
+#tweet img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+footer {
+    background: url('../materiales/images/separateur.png') repeat-x,
+    url('../materiales/images/ico_top.png') no-repeat top center;
+    /** Aqui es un ejemplo de insertar varias imagenes como background
+    indicar cuantas veces quiero que se repita y cuantas donde lo quiero posicionar
+    como lo es el ejemplo de "top center"**/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
+
+footer p, footer ul {
+    font-size: .8em;
+}
+
+#footer-tweet {
+    width: 28%;
+}
+
+#my_books {
+    width: 35%;
+}
+
+#my_books img {
+    border: 1px solid #000;
+}
+
+.container-my_friends {
+    width: 30%;
+}
+
+#my_sujets, .my_ouvrage {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my_sujets  ul,.my_ouvrage ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('../materiales/images/ico_liensexterne.png');
+    padding-left: 2px;
+}
